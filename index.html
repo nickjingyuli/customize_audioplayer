@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="audio-img">
+                <img class="cover" />
+            </div>
+            <div id="audio-player">
+                <div id="audio-info"><span class="artist"></span> - <span class="title"></span></div>
+                <input type="range" id="volume" min="0" max="10" value="5" />
+                <br />
+                <div id="audio-buttons">
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="stop"></button>
+                    <button id="next"></button>
+                </div>
+                <div class="clearfix"></div>
+                <div id="tracker">
+                    <div id="progressbar">
+                        <span id="progress"> </span>
+                    </div>
+                    <span id="duration"></span>
+                </div>
+                <div class="clearfix"></div>
+                <ul id="playlist">
+                    <li song="In The End - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">
+                        In The End.mp3
+                    </li>
+                    <li song="Numb - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">Numb.mp3</li>
+                    <li song="What I've Done - Linkin Park.mp3" cover="cover1.jpg" artist="Linkin Park">
+                        What I've Done.mp3
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
